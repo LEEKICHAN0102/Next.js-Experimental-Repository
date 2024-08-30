@@ -1,33 +1,12 @@
+// components
+import Button from "@/components/core/Button";
+
 export default function Home() {
   return (
-    <main className="bg-gray-300 h-screen flex items-center justify-center p-5 dark:bg-gray-700">
-      <div className="bg-white shadow-lg p-5 rounded-2xl w-full max-w-screen-sm dark:bg-gray-500">
-        <div className="flex justify-between items-center">
-          <div className="flex flex-col">
-            <span className="text-gray-600 font-semibold -mb-1 dark:text-gray-300">
-              In transit
-            </span>
-            <span className="text-4xl font-semibold">Coolblue</span>
-          </div>
-          <div className="size-12 rounded-full bg-orange-400" />
-        </div>
-        <div className="my-2 flex items-center gap-2">
-          <span className="bg-green-400 text-white uppercase px-2.5 py-1.5 text-xs font-medium rounded-full ">
-            Today
-          </span>
-          <span className="dark:text-gray-300">9:30-10:30</span>
-        </div>
-        <div className="relative">
-          <div className="bg-gray-200 absolute rounded-full w-full h-2" />
-          <div className="bg-green-400 absolute rounded-full w-2/3 h-2" />
-        </div>
-        <div className="flex justify-between items-center mt-5 text-gray-600 dark:text-gray-300">
-          <span>Expected</span>
-          <span>Sorting center</span>
-          <span>In transit</span>
-          <span className="text-gray-400">Delivered</span>
-        </div>
-      </div>
+    <main className="flex items-center justify-center min-h-screen flex-col gap-10">
+        <span className="font-bold text-2xl">쓸데없는 토론하기</span>
+        <span className="font-bold">실시간으로 채팅에 참여해보세요. 주제는 아무거나 상관 없습니다</span>
+        <Button text={"채팅방 둘러보기"} />
     </main>
   );
 }
